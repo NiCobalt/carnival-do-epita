@@ -27,11 +27,11 @@ class NicobaltPlayer extends Player {
             else
             {
                 if ($this->result->getLastChoiceFor($this->mySide) == 'rock')
-                    return 'scissors';
-                elseif ($this->result->getLastChoiceFor($this->mySide) == 'scissors')
                     return 'paper';
-                else
+                elseif ($this->result->getLastChoiceFor($this->mySide) == 'scissors')
                     return 'rock';
+                else
+                    return 'scissors';
             }
         }
     }
