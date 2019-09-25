@@ -297,16 +297,16 @@ OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOxoc:::ccccccllllloooooooodddddddddddddddd
             if ($this->result->getLastScoreFor($this->mySide) == 3)
             {
                 if ($this->result->getLastChoiceFor($this->mySide) == 'rock') {
-                    print_r(str_replace("O", " ", $scissors));
+                    //print_r(str_replace("O", " ", $scissors));
                     return 'scissors';
                 }
                 elseif ($this->result->getLastChoiceFor($this->mySide) == 'scissors')
                 {
-                    print_r(str_replace("O", " ", $paper));
+                    //print_r(str_replace("O", " ", $paper));
                     return 'paper';
                 }
                 else {
-                    print_r(str_replace("O", " ", $rock));
+                    //print_r(str_replace("O", " ", $rock));
                     return 'rock';
                 }
             }
