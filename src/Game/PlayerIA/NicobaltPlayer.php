@@ -1,11 +1,8 @@
 <?php
-
-include 'Player.php';
-
-use Hackathon\PlayerIA\Player;
+namespace Hackathon\PlayerIA;
 
 class NicobaltPlayer extends Player {
-    protected function getChoice() {
-
+    function getChoice() {
+        return 'paper';
     }
 };
