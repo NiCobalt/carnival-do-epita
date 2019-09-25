@@ -23,7 +23,7 @@ class NicobaltPlayer extends Player {
         else
         {
             //$this->PrettyDisplay();
-            print_r($this->result->getStatsFor($this->opponentSide));
+            //print_r($this->result->getStatsFor($this->opponentSide));
             if ($this->result->getStatsFor($this->opponentSide)['name'] == 'Paper')
                 return 'scissors';
             elseif ($this->result->getStatsFor($this->opponentSide)['name'] == 'Rock')
